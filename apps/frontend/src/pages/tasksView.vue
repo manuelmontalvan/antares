@@ -92,7 +92,7 @@ const editTask = (task: any) => {
   showModal.value = true;
 };
 
-const deleteTask = async (id: number) => {
+const deleteTask = async (id: string) => {
   await tasksStore.deleteTask(id);
   Swal.fire('Deleted', 'Task deleted successfully', 'success');
 };

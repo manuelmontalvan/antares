@@ -21,7 +21,7 @@ const authStore = useAuthStore();
 if (to.meta.requiresAuth && !authStore.isAuthenticated) {
 next({ name: 'login' });
 } else if (to.name === 'login' && authStore.isAuthenticated) {
-next({ name: 'tasks' }); // ⚡ evita que el usuario logueado vuelva al login
+next({ name: 'tasks' }); 
 } else {
 next();
 }
